@@ -1,0 +1,27 @@
+.mode { 
+    float:right; 
+    margin-top: 20px;
+    margin-right: 20px;
+} 
+.change { 
+    cursor: pointer; 
+    border: 1px solid #555; 
+    border-radius: 10%; 
+    width: 20px; 
+    text-align: center; 
+    padding: 8px; 
+    margin-left: 8px; 
+} 
+.dark{ 
+    background-color: #222; 
+    color: #e6e6e6; 
+}
+.dark h1{ 
+color: #fff;         
+} 
+
+/* this code affects the body of the document
+allowing for a class change to the body creating a dark mode and
+a light mode.
+I wanted this to be seperate for ease of access to the code and to 
+acknowledge it is not 'part' of the main styling */
