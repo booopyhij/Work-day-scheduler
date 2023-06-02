@@ -27,7 +27,7 @@
   
   $(document).ready(function () {
     $('.saveBtn').on('click', function() {
-        preventDefault();
+        //preventDefault();
         var textValue = $(this).siblings('.description').val();
         var time = $(this).parent().attr('id');
         localStorage.setItem(time, textValue);
@@ -35,11 +35,25 @@
     function hourUpdater() {
       var currentHour = dayjs().hour();
       // loop over time blocks
+      console.log(currentHour);
      
       $('.time-block').each(function () {
          // parseint attr split, time-block 
-         //JSON.parse('time-block').attr().split();
+         var blockHour= parseInt($(this).attr('id').split('-')[1]);
          //add remove classes for past present 
+         if (blockHour < currentHour){
+            $(this).addClass('past');
+            $(this).removeClass('present');
+            $(this).removeClass('future');
+         } else if (blockHour = currentHour) {
+            $(this).removeClass('past');
+            $(this).removeClass('future');
+            $(this).addClass('present');
+         } else {
+            $(this).addClass('future');
+            $(this).removeClass('past');
+            $(this).removeClass('present');
+         }
       });
     }
     hourUpdater();
@@ -57,6 +71,6 @@
     //get items for all hours
     // display current day on page
     $('#currentDay').text(dayjs().format('dddd, MMMM D, YYYY'));
-    $('#currentDay').text(dayjs().minutes().seconds());
+    
   });
   //add hour and minute 
