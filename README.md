@@ -19,7 +19,7 @@ this feature allows users to change the background of the page to a dark preset,
 -- Save button:
 This feature on the right side of each row allows users to save their events for the day and set them to local storage.
 
-Deploted site: https://booopyhij.github.io/week5hw/
+Deploted site: (https://booopyhij.github.io/Work-day-scheduler/)
 
 
 ![Text here](assets\workdayscheduler.png)
