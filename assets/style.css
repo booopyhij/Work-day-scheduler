@@ -1,8 +1,9 @@
+/* setting the styling for the whole body, with a base font and font size */
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
   }
-  
+  /* targeting the textarea tags giving them style */
   textarea {
     background: transparent;
     border: none;
@@ -11,40 +12,40 @@ body {
     border-left: 1px solid black;
     padding: 10px;
   }
-  
+  /* pre wrapping the white space with the description class */
   .description {
     white-space: pre-wrap;
   }
-  
+  /* giving a border to all the time-block classes */
   .time-block {
     border-radius: 15px;
   }
-  
+  /* setting up rows */
   .row {
     border-top: 1px solid white;
   }
-  
+  /* giving styling to hours */
   .hour {
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
   }
-  
+  /* giving styling to the past class */
   .past {
     background-color: #d3d3d3;
     color: white;
   }
-  
+  /* giving styling to the class of present */
   .present {
     background-color: #ff6961;
     color: white;
   }
-  
+  /* giving styling to the class of future */
   .future {
     background-color: #77dd77;
     color: white;
   }
-  
+  /* creating the save button */
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
@@ -52,7 +53,8 @@ body {
     background-color: #06aed5;
     color: white;
   }
-  
+  /* adding the psuedo styling hover to the save button allowing the user to know 
+  when they are over the button */
   .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;

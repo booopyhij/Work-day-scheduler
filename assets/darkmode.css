@@ -1,8 +1,10 @@
+/* this creates the class for the button */
 .mode { 
     float:right; 
     margin-top: 20px;
     margin-right: 20px;
 } 
+/*  this creates the style for what to do when the button is clicked*/
 .change { 
     cursor: pointer; 
     border: 1px solid #555; 
@@ -12,10 +14,12 @@
     padding: 8px; 
     margin-left: 8px; 
 } 
+/* this turns the background dark, creating the darkmode and turning the text white */ 
 .dark{ 
     background-color: #222; 
     color: #e6e6e6; 
 }
+/* targeting the h1 tag making sure the text is white */
 .dark h1{ 
 color: #fff;         
 } 
