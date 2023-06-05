@@ -40,12 +40,13 @@
       $('.time-block').each(function () {
          // parseint attr split, time-block 
          var blockHour= parseInt($(this).attr('id').split('-')[1]);
+         console.log(blockHour);
          //add remove classes for past present 
          if (blockHour < currentHour){
             $(this).addClass('past');
             $(this).removeClass('present');
             $(this).removeClass('future');
-         } else if (blockHour = currentHour) {
+         } else if (blockHour === currentHour) {
             $(this).removeClass('past');
             $(this).removeClass('future');
             $(this).addClass('present');
@@ -59,6 +60,7 @@
     hourUpdater();
     setInterval(hourUpdater, 15000);
     // load any saved data from localStorage
+    // could have a for loop instead 'hour-' +i+ '.description'
     $('#hour-9 .description').val(localStorage.getItem('hour-9'));
     $('#hour-10 .description').val(localStorage.getItem('hour-10'));
     $('#hour-11 .description').val(localStorage.getItem('hour-11'));
